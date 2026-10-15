@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /*THE SPECFICITY OF THIS SELECTOR IS 1*/
+        h1{
+            color: rgb(34, 117, 69) ;
+        }
+        /* THE SPECFICITY OF THIS SELECTOR IS 10*/
+        h1.yellow{
+            color: rgb(241, 227, 17);
+        }
+        /* THE SPECFICITY OF THIS SELECTOR IS 10*/
+        .purple{
+            color: rgb(11, 59, 219);
+        }
+        /*THIS IS AN EXAMPLE OF ATTRIBUTE SELECTOR WHOSE SPECIFICITY IS 10*/
+        [data-x=a]{
+            background-color: darkgray;
+        }
+        /* THE SPECFICITY OF THIS SELECTOR IS 10*/
+        .cred{
+            color: rgb(238, 16, 16);
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred purple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>

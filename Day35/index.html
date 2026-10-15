@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: rgb(139, 115, 115);
+        }
+        .box::first-line{
+            background-color: rgb(228, 27, 44);
+        } */
+        /* .boxes *{
+            color: blue;
+            border: 2PX solid black;
+        }
+        [data-color="primary"]{
+            margin-top: 45px;
+        } */
+         /* .box:nth-child(even){
+            background-color: blue;
+         } */
+        .boxes::before{
+            background-color: aqua;
+            content: "MEET IS CODER";
+        }  
+        .boxes::after{
+            background-color: aqua;
+            content: "MEET IS CODER";
+        }  
+        .boxes::selection{
+            background-color: black;
+            color: brown;
+        }
+        .box::first-letter{
+            color: chocolate;
+            font-size: 50px;
+        }
+        input::placeholder{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I AM FIRST BOX</div>
+        <div class="box">I AM SECOND BOX</div>
+        <div class="box">I AM THIRD BOX</div>
+        <input type="text" placeholder="TYPE NAME">
+    </div>
+
+</body>
+</html>

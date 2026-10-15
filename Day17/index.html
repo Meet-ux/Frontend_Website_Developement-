@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        
+        
+         /* CLASS SELECTOR */
+        .red{
+            background-color: rgb(27, 224, 27);
+        }
+        /* ID SELECTOR */
+        #green{
+            background-color: burlywood;
+        }
+        /*direct CHILD SELECTOR */
+        div >p{
+            background-color: chocolate;
+        }
+        /* Descendant Selector */
+        div p{
+            background-color: crimson;
+        }
+         /* UNIVERSAL SELECTOR */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       /* pseudo Selector */
+        a:visited{
+            color: rgb(0, 0, 0);
+        }
+        a:link{
+            color: rgb(218, 68, 68);
+        }
+        a:active{
+            background-color: darkviolet;
+        }
+        a:hover{
+            background-color: darkolivegreen;
+        }
+        p:first{
+            color: brown;
+        } 
+
+
+
+    </style>
+</head>
+<body>
+    <div class="red">I AM A DIV</div>
+
+    <div id="green"><h1>I am a second div</h1></div>
+
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, blanditiis.
+    </p></div>
+
+    <div>
+        <article>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae iure nesciu.
+        </article>
+    </div>
+    <a href="https://www.google.com/search?q=google+sheets&oq=google&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyDwgCEAAYQxixAxiABBiKBTIPCAMQABhDGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNDQ5ajBqN6gCCLACAfEFu5hcueYykNw&sourceid=chrome&ie=UTF-">go to google</a>
+    
+</body>
+</html>

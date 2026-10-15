@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EXERCISE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #f2f2f2;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 60px;
+      margin-right: 10px;
+    }
+
+    .logo h5 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+    }
+
+    ul li {
+      position: relative;
+      cursor: pointer;
+    }
+
+    ul li img {
+      width: 25px;
+      height: 25px;
+    }
+
+    /* Add ▼ arrow */
+    .dropdown-toggle::after {
+      content: " ▼";
+      font-size: 12px;
+    }
+
+    /* Dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      padding: 10px;
+      border-radius: 4px;
+      min-width: 120px;
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Show dropdown on hover */
+    li:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="container">
+    <div class="logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp8V1GNj0TMFvWaxjSmiiaJCSticAfQ5miAw&s" alt="Logo">
+      <h5>MY MEET PRAJAPAT</h5>
+    </div>
+
+    <ul>
+      <li class="dropdown-toggle">
+        Product
+        <div class="dropdown-content">
+          <a href="#">Product 1</a>
+          <a href="#">Product 2</a>
+          <a href="#">Product 3</a>
+        </div>
+      </li>
+      <li class="dropdown-toggle">
+        Pricing
+        <div class="dropdown-content">
+          <a href="#">Plan A</a>
+          <a href="#">Plan B</a>
+        </div>
+      </li>
+      <li class="dropdown-toggle">
+        Resource
+        <div class="dropdown-content">
+          <a href="#">Docs</a>
+          <a href="#">API</a>
+          <a href="#">Tutorials</a>
+        </div>
+      </li>
+      <li class="dropdown-toggle">
+        About Us
+        <div class="dropdown-content">
+          <a href="#">Our Story</a>
+          <a href="#">Team</a>
+          <a href="#">Careers</a>
+        </div>
+      </li>
+      <li>
+        <img src="https://www.shutterstock.com/image-vector/bubble-speech-icon-vector-illustration-260nw-1349614229.jpg" alt="icon">
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>

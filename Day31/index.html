@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        } 
+        @media only screen and (max-width :455px) {
+            body{
+                background-color: blue;
+            }
+        }
+        @media only screen and (orientation: landscape) {
+            body{
+                border: 2px solid purple;
+            }
+        }
+        div{
+            display: flex;
+            
+        }
+        .box{
+            border: 2px solid black;
+            margin: 2px;
+            padding: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 28, 28);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        HEY  I AM READY
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+    </div>
+    
+   
+</body>
+</html>
